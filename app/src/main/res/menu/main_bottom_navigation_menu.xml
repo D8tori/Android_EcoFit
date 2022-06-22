@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_bottom_home"
+        android:title="@string/main_home" />
+    <item
+        android:id="@+id/menu_challenge"
+        android:enabled="true"
+        android:icon="@drawable/ic_bottom_challenge"
+        android:title="@string/main_challenge" />
+    <item
+        android:id="@+id/menu_market"
+        android:enabled="true"
+        android:icon="@drawable/ic_bottom_marcket"
+        android:title="@string/main_market" />
+    <item
+        android:id="@+id/menu_mypage"
+        android:enabled="true"
+        android:icon="@drawable/ic_bottom_mypage"
+        android:title="@string/main_mypage" />
+</menu>
