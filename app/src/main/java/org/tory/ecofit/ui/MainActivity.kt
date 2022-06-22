@@ -1,5 +1,7 @@
 package org.tory.ecofit.ui
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -81,5 +83,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         transaction.commit()
+    }
+
+    companion object {
+        fun start(context: Context) {
+            val intent = Intent(context, MainActivity::class.java)
+            context.startActivity(intent)
+        }
     }
 }
