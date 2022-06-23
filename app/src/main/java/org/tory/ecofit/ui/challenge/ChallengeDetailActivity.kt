@@ -38,6 +38,7 @@ class ChallengeDetailActivity : AppCompatActivity() {
 
     private fun setAdapter(){
         challengeListAdapter = ChallengeDetailAdapter()
+        binding.tvChallengeNum.text = challengeListAdapter.itemCount.toString()
         binding.rvChallengeList.adapter = challengeListAdapter
         binding.rvChallengeList.layoutManager = GridLayoutManager(this, 3)
     }
@@ -53,6 +54,11 @@ class ChallengeDetailActivity : AppCompatActivity() {
     private fun initClickListener(){
         binding.ivBack.setOnClickListener {
             finish()
+        }
+
+        binding.buttonJoin.setOnClickListener{
+            val intent = Intent(this, ChallengeJoinActivity::class.java)
+            this?.startActivity(intent)
         }
     }
 
