@@ -1,8 +1,9 @@
 package org.tory.ecofit.data.local
 
-import androidx.annotation.DrawableRes
+import com.google.gson.annotations.SerializedName
+
 
 data class HomeAdData(
-    @DrawableRes
-    val image: Int
+    @SerializedName("image")
+    val image: String,
 )
