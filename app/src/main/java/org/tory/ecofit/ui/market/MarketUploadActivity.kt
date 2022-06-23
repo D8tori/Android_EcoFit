@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import org.tory.ecofit.R
 import org.tory.ecofit.databinding.ActivityMarketUploadBinding
 
 class MarketUploadActivity : AppCompatActivity() {
@@ -46,24 +45,24 @@ class MarketUploadActivity : AppCompatActivity() {
         }
     }
 
-    private fun setEtc(){
-        binding.clTagEtc.setOnClickListener{
+    private fun setEtc() {
+        binding.clTagEtc.setOnClickListener {
             binding.clTagEtc.isSelected = binding.clTagEtc.isSelected != true
         }
     }
 
-    private fun initClickListener(){
+    private fun initClickListener() {
         binding.ivBack.setOnClickListener {
             finish()
         }
 
-        binding.buttonUpload.setOnClickListener{
+        binding.buttonUpload.setOnClickListener {
             //서버 전송
         }
     }
 
 
-        companion object {
+    companion object {
         fun start(context: Context) {
             val intent = Intent(context, MarketUploadActivity::class.java)
             context.startActivity(intent)
