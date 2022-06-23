@@ -26,6 +26,12 @@
     <string name="market_tagSubfood">#대체식품</string>
     <string name="market_point">P</string>
 
-
+    <!-- Challenge -->
+    <string name="challenge_title1">플라스틱 줄이기</string>
+    <string name="challenge_title2">에코플로깅</string>
+    <string name="challenge_title3">로컬 푸드 소비</string>
+    <string name="challenge_title4">업사이클링 하기</string>
+    <string name="challenge_text">명의 사람들이 참여했어요!</string>
+    <string name="challenge_btn">챌린지 참여하기</string>
 
 </resources>
