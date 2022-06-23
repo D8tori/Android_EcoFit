@@ -9,4 +9,43 @@
     <string name="main_mypage">My page</string>
 
 
+    <!-- Home -->
+    <string name="home_habitTitle1">습관 1</string>
+    <string name="home_habitTitle2">습관 2</string>
+    <string name="home_habitTitle3">습관 3</string>
+    <string name="home_habitNum">회</string>
+    <string name="home_habitPoint">P / 최대 100P</string>
+    <string name="home_point">눌러서 포인트 받기</string>
+
+    <!-- Market -->
+    <string name="market_search">검색어를 입력하세요</string>
+    <string name="market_tagEtc">#기타</string>
+    <string name="market_tagVegan">#비건</string>
+    <string name="market_tagUpcycling">#업사이클링</string>
+    <string name="market_tagLocalfood">#로컬푸드</string>
+    <string name="market_tagSubfood">#대체식품</string>
+    <string name="market_point">P</string>
+
+    <!-- MarketUpload -->
+    <string name="marketUpload_title">상품 등록</string>
+    <string name="marketUpload_name">상품 이름</string>
+    <string name="marketUpload_price">상품 가격</string>
+    <string name="marketUpload_content">상품 설명</string>
+
+    <!-- Challenge -->
+    <string name="challenge_title1">플라스틱 줄이기</string>
+    <string name="challenge_title2">에코플로깅</string>
+    <string name="challenge_title3">로컬 푸드 소비</string>
+    <string name="challenge_title4">업사이클링 하기</string>
+
+    <!-- ChallengeDetail -->
+    <string name="challenge_text">명의 사람들이 참여했어요!</string>
+    <string name="challenge_btn">챌린지 참여하기</string>
+
+    <!-- ChallengeJoin -->
+    <string name="challengeJoin_plastic">플라스틱으로 된 일회용 컵의 경우 썩는데\n10년 이상이 걸리고,\n칫솔은 100년,\n플라스틱 용기는 500년 이상의 시간이\n걸린다고 합니다.\n수십, 수백년의 지구를 지켜주셔서 감사합니다!</string>
+    <string name="challengeJoin_plogging">플로깅(plogging) 자세는\n스쿼트나 런지 운동 자세와 비슷하여\n칼로리 소모량이 일반 조깅보다\n약 50kcal를 더 소모한다는\n연구결과가 발표되기도 했습니다.\n플로깅을 통해 환경과 건강 두 마리 토끼를\n모두 잡아보세요!</string>
+    <string name="challengeJoin_localfood">로컬 푸드는 가까운 거리에서 생산되기 때문에\n소비자는 건강하고 맛있는 음식을\n먹을 수 있고\n운송 거리가 짧아서\n이산화탄소와 같은 온실가스를\n줄이는 효과도 있습니다.\n무엇보다 유통 단계를 감소시키면\n가격도 저렴해질 뿐만 아니라\n지역 자본이 지역 내에서 돌기 때문에\n지역 경제 활성화 효과도 있습니다.</string>
+    <string name="challengeJoin_upcycling">업사이클링이란\n업그레이드(upgrade)와\n리사이클링(recycling)의 합성어로\n버려진 물건을 재활용해 더 가치 있는\n제품으로 만드는 \'새활용\'을 말합니다\n쓰레기로 인식되던 소재들이\n새활용 제품으로 재탄생됨으로써\n자원의 가치에 대해 새롭게 생각할 수 있는\n기회가 되었길 바랍니다!</string>
+    <string name="challengeJoin_done">챌린지 완료하기</string>
 </resources>

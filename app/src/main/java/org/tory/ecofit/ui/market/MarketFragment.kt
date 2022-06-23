@@ -1,60 +1,96 @@
 package org.tory.ecofit.ui.market
 
+import android.content.Intent
+import android.opengl.Visibility
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.GridLayoutManager
 import org.tory.ecofit.R
+import org.tory.ecofit.databinding.FragmentMarketBinding
+import org.tory.ecofit.ui.challenge.ChallengeDetailActivity
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [MarketFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class MarketFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private lateinit var binding: FragmentMarketBinding
+    private val viewModel: MarketViewModel by activityViewModels()
+    private lateinit var marketListAdapter: MarketAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_market, container, false)
+        binding = FragmentMarketBinding.inflate(layoutInflater)
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment MarketFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            MarketFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        viewModel.setItemList()
+        setMarketAdapter()
+        setListObserver()
+        setSubFood()
+        setUpCycling()
+        setLocalFood()
+        setVegan()
+        setEtc()
+        initClickListener()
+    }
+
+    private fun setSubFood() {
+        binding.clTagSubfood.setOnClickListener {
+            binding.clTagSubfood.isSelected = binding.clTagSubfood.isSelected != true
+        }
+    }
+
+    private fun setUpCycling() {
+        binding.clTagUpcycling.setOnClickListener {
+            binding.clTagUpcycling.isSelected = binding.clTagUpcycling.isSelected != true
+        }
+    }
+
+    private fun setLocalFood() {
+        binding.clTagLocalfood.setOnClickListener {
+            binding.clTagLocalfood.isSelected = binding.clTagLocalfood.isSelected != true
+        }
+    }
+
+    private fun setVegan() {
+        binding.clTagVegan.setOnClickListener {
+            binding.clTagVegan.isSelected = binding.clTagVegan.isSelected != true
+        }
+    }
+
+    private fun setEtc(){
+        binding.clTagEtc.setOnClickListener{
+            binding.clTagEtc.isSelected = binding.clTagEtc.isSelected != true
+        }
+    }
+
+    private fun setMarketAdapter(){
+        marketListAdapter = MarketAdapter()
+        binding.rvMarketList.adapter = marketListAdapter
+        binding.rvMarketList.layoutManager = GridLayoutManager(requireContext(), 2)
+        Log.d("************SetAdapter",viewModel.itemList.value.toString())
+    }
+
+    private fun setListObserver(){
+        viewModel.itemList.observe(viewLifecycleOwner) {itemList ->
+            with(binding.rvMarketList.adapter as MarketAdapter) {
+                setList(itemList)
             }
+        }
+    }
+
+    private fun initClickListener(){
+        binding.ivAdd.setOnClickListener {
+            val intent = Intent(context, MarketUploadActivity::class.java)
+            context?.startActivity(intent)
+        }
     }
 }

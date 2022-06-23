@@ -9,4 +9,15 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="green01">#8DB337</color>
+    <color name="purple01">#8F69BC</color>
+    <color name="yellow01">#FFC342</color>
+    <color name="blue01">#496EB3</color>
+
+    <color name="red01">#FF5D42</color>
+    <color name="red02">#B33A25</color>
+
+    <color name="gray01">#F2F2F2</color>
+
+    <color name="black40">#66000000</color>
+    <color name="black15">#26000000</color>
 </resources>
