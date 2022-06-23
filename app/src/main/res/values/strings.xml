@@ -24,6 +24,8 @@
     <string name="market_tagUpcycling">#업사이클링</string>
     <string name="market_tagLocalfood">#로컬푸드</string>
     <string name="market_tagSubfood">#대체식품</string>
+    <string name="market_point">P</string>
+
 
 
 </resources>
