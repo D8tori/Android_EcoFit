@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="org.tory.ecofit.data.local.MarketItemData" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="7dp"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:id="@+id/iv_marketImage"
+            android:layout_width="140dp"
+            android:layout_height="190dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/img_logo"/>
+
+        <TextView
+            android:id="@+id/tv_marketPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/iv_marketImage"
+            app:layout_constraintTop_toBottomOf="@+id/iv_marketImage"
+            tools:text="8,000"/>
+
+        <TextView
+            android:id="@+id/tv_marketPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/market_point"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/tv_marketPrice"
+            app:layout_constraintTop_toBottomOf="@+id/iv_marketImage" />
+
+        <TextView
+            android:id="@+id/tv_marketTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_marketPrice"
+            app:layout_constraintTop_toBottomOf="@+id/tv_marketPrice"
+            tools:text="상품명" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
