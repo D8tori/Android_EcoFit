@@ -8,6 +8,7 @@
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/drawable/bg_box_gray_round_20.xml" value="0.296" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/drawable/bg_box_green_round_18.xml" value="0.3285" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/drawable/bg_box_green_round_20.xml" value="0.296" />
+        <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/drawable/bg_box_line.xml" value="0.2325" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/drawable/bg_box_red_round_20.xml" value="0.296" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/drawable/bg_box_round_10.xml" value="0.2325" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/drawable/bg_box_round_14.xml" value="0.2885" />
@@ -26,11 +27,12 @@
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout-v28/fragment_home.xml" value="0.8333333333333334" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/activity_challenge_detail.xml" value="0.6" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/activity_market_upload.xml" value="0.7333333333333334" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/bg_box_round_14.xml" value="0.3625" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/fragment_challenge.xml" value="0.3625" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/fragment_home.xml" value="0.14666666666666667" />
-        <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/fragment_market.xml" value="0.3175182481751825" />
+        <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/fragment_market.xml" value="0.41601912731619844" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/fragment_mypage.xml" value="0.34791666666666665" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/item_ad.xml" value="0.3625" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/item_challenge_detail_list.xml" value="0.3625" />

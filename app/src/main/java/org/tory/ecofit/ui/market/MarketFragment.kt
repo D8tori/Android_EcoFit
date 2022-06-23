@@ -1,5 +1,6 @@
 package org.tory.ecofit.ui.market
 
+import android.content.Intent
 import android.opengl.Visibility
 import android.os.Bundle
 import android.util.Log
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.GridLayoutManager
 import org.tory.ecofit.R
 import org.tory.ecofit.databinding.FragmentMarketBinding
+import org.tory.ecofit.ui.challenge.ChallengeDetailActivity
 
 class MarketFragment : Fragment() {
     private lateinit var binding: FragmentMarketBinding
@@ -37,6 +39,7 @@ class MarketFragment : Fragment() {
         setLocalFood()
         setVegan()
         setEtc()
+        initClickListener()
     }
 
     private fun setSubFood() {
@@ -81,6 +84,13 @@ class MarketFragment : Fragment() {
             with(binding.rvMarketList.adapter as MarketAdapter) {
                 setList(itemList)
             }
+        }
+    }
+
+    private fun initClickListener(){
+        binding.ivAdd.setOnClickListener {
+            val intent = Intent(context, MarketUploadActivity::class.java)
+            context?.startActivity(intent)
         }
     }
 }
