@@ -3,8 +3,8 @@ package org.tory.ecofit.data.model.response
 import com.google.gson.annotations.SerializedName
 
 data class ResponseMarketList(
-    @SerializedName("data")
-    val `data`: MarketData
+    @SerializedName("markets")
+    val markets: List<MarketData>
 )
 
 data class MarketData(

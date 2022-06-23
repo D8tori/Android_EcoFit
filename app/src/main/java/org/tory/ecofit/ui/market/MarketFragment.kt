@@ -76,13 +76,12 @@ class MarketFragment : Fragment() {
         marketListAdapter = MarketAdapter()
         binding.rvMarketList.adapter = marketListAdapter
         binding.rvMarketList.layoutManager = GridLayoutManager(requireContext(), 2)
-        Log.d("************SetAdapter",viewModel.itemList.value.toString())
     }
 
     private fun setListObserver(){
         viewModel.itemList.observe(viewLifecycleOwner) {itemList ->
             with(binding.rvMarketList.adapter as MarketAdapter) {
-                setList(itemList)
+                setList(itemList.markets)
             }
         }
     }
