@@ -63,4 +63,7 @@
     <string name="mypage_ask">1:1 문의</string>
     <string name="mypage_setting">환경설정</string>
 
+    <!-- MypageDetail -->
+    <string name="mypageDetail_title">챌린지 참여 내역</string>
+
 </resources>
