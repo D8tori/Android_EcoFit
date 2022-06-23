@@ -27,7 +27,22 @@ class ChallengeFragment : Fragment() {
     }
 
     private fun setButton(){
-        binding.btn.setOnClickListener{
+        binding.clChoice1.setOnClickListener{
+            val intent = Intent(context, ChallengeDetailActivity::class.java)
+            context?.startActivity(intent)
+        }
+
+        binding.clChoice2.setOnClickListener{
+            val intent = Intent(context, ChallengeDetailActivity::class.java)
+            context?.startActivity(intent)
+        }
+
+        binding.clChoice3.setOnClickListener{
+            val intent = Intent(context, ChallengeDetailActivity::class.java)
+            context?.startActivity(intent)
+        }
+
+        binding.clChoice4.setOnClickListener{
             val intent = Intent(context, ChallengeDetailActivity::class.java)
             context?.startActivity(intent)
         }
