@@ -9,29 +9,39 @@
 
 
     <TextView
-        android:id="@+id/tv_title_challenge"
-        android:layout_width="122dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="108dp"
-        android:text="챌린지 선택"
-        android:textAlignment="center"
-        android:textColor="#000000"
+        android:id="@+id/tv_challengeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:text="@string/challenge_title"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <View
+        android:id="@+id/divider"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/black40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_challengeTitle" />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout15"
-        android:layout_width="144dp"
-        android:layout_height="205dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="212dp"
+        android:id="@+id/cl_choice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintEnd_toStartOf="@+id/cl_choice2"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/divider">
 
         <ImageView
             android:id="@+id/iv_choice1"
@@ -40,7 +50,8 @@
             android:src="@drawable/ic_frame_challenge"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/tv_choice1"
@@ -49,10 +60,10 @@
             android:layout_marginStart="21dp"
             android:layout_marginTop="146dp"
             android:background="#FFFFFF"
-            android:text="플라스틱 줄이기"
+            android:text="@string/challenge_title1"
             android:textAlignment="viewStart"
             android:textColor="#000000"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -67,22 +78,19 @@
             android:src="@drawable/ic_plastic_challenge"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout16"
-        android:layout_width="144dp"
-        android:layout_height="205dp"
-
-        android:layout_marginStart="190dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout17"
-        app:layout_constraintStart_toStartOf="parent">
+        android:id="@+id/cl_choice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cl_choice1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cl_choice1"
+        app:layout_constraintTop_toTopOf="@+id/cl_choice1">
 
         <ImageView
             android:id="@+id/iv_choice2"
@@ -100,10 +108,10 @@
             android:layout_marginEnd="21dp"
             android:layout_marginBottom="40dp"
             android:background="#FFFFFF"
-            android:text="에코플로깅"
+            android:text="@string/challenge_title2"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -122,15 +130,15 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout17"
-        android:layout_width="144dp"
-        android:layout_height="205dp"
-        android:layout_marginStart="190dp"
-        android:layout_marginTop="437dp"
+        android:id="@+id/cl_choice3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintEnd_toStartOf="@+id/cl_choice4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/cl_choice1">
 
         <ImageView
             android:id="@+id/iv_choice3"
@@ -142,15 +150,63 @@
 
         <TextView
             android:id="@+id/tv_choice3"
+            android:layout_width="0dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="40dp"
+            android:background="#FFFFFF"
+            android:text="@string/challenge_title3"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_image4"
+            android:layout_width="120dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="40dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_localfood_challenge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_choice4"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cl_choice3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cl_choice3"
+        app:layout_constraintTop_toTopOf="@+id/cl_choice3">
+
+        <ImageView
+            android:id="@+id/iv_choice4"
+            android:layout_width="144dp"
+            android:layout_height="203dp"
+            android:src="@drawable/ic_frame_challenge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_choice4"
             android:layout_width="120dp"
             android:layout_height="19dp"
             android:layout_marginStart="21dp"
             android:layout_marginEnd="21dp"
             android:layout_marginBottom="40dp"
             android:background="#FFFFFF"
-            android:text="업사이클링 하기"
+            android:textAlignment="center"
+            android:text="@string/challenge_title4"
             android:textColor="#000000"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -168,54 +224,7 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout18"
-        android:layout_width="144dp"
-        android:layout_height="205dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="95dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout15">
 
-        <ImageView
-            android:id="@+id/iv_choice4"
-            android:layout_width="144dp"
-            android:layout_height="203dp"
-            android:src="@drawable/ic_frame_challenge"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tv_choice4"
-            android:layout_width="0dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="21dp"
-            android:layout_marginEnd="21dp"
-            android:layout_marginBottom="40dp"
-            android:background="#FFFFFF"
-            android:text="로컬푸드 소비"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="16dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <ImageView
-            android:id="@+id/iv_image4"
-            android:layout_width="120dp"
-            android:layout_height="105dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="40dp"
-            android:background="#FFFFFF"
-            android:src="@drawable/ic_localfood_challenge"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
