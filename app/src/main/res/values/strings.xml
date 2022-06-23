@@ -48,4 +48,22 @@
     <string name="challengeJoin_localfood">로컬 푸드는 가까운 거리에서 생산되기 때문에\n소비자는 건강하고 맛있는 음식을\n먹을 수 있고\n운송 거리가 짧아서\n이산화탄소와 같은 온실가스를\n줄이는 효과도 있습니다.\n무엇보다 유통 단계를 감소시키면\n가격도 저렴해질 뿐만 아니라\n지역 자본이 지역 내에서 돌기 때문에\n지역 경제 활성화 효과도 있습니다.</string>
     <string name="challengeJoin_upcycling">업사이클링이란\n업그레이드(upgrade)와\n리사이클링(recycling)의 합성어로\n버려진 물건을 재활용해 더 가치 있는\n제품으로 만드는 \'새활용\'을 말합니다\n쓰레기로 인식되던 소재들이\n새활용 제품으로 재탄생됨으로써\n자원의 가치에 대해 새롭게 생각할 수 있는\n기회가 되었길 바랍니다!</string>
     <string name="challengeJoin_done">챌린지 완료하기</string>
+
+    <!-- Mypage -->
+    <string name="mypage_name">의 프로필</string>
+    <string name="mypage_ecoPoint">나의 에코 포인트</string>
+    <string name="mypage_point">P</string>
+    <string name="mypage_pointHistory">포인트 적립 및 사용 내역</string>
+    <string name="mypage_activity">나의 활동</string>
+    <string name="mypage_challengeHistory">챌린지 참여 내역</string>
+    <string name="mypage_invite">친구 초대</string>
+    <string name="mypage_service">서비스</string>
+    <string name="mypage_notice">이벤트 / 공지사항</string>
+    <string name="mypage_qna">자주 뭍는 질문</string>
+    <string name="mypage_ask">1:1 문의</string>
+    <string name="mypage_setting">환경설정</string>
+
+    <!-- MypageDetail -->
+    <string name="mypageDetail_title">챌린지 참여 내역</string>
+
 </resources>

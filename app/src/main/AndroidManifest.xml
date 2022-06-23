@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EcoFit">
         <activity
+            android:name=".ui.mypage.MypageDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.challenge.ChallengeJoinActivity"
             android:exported="false" />
         <activity
