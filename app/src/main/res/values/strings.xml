@@ -17,4 +17,13 @@
     <string name="home_habitPoint">P / 최대 100P</string>
     <string name="home_point">눌러서 포인트 받기</string>
 
+    <!-- Market -->
+    <string name="market_search">검색어를 입력하세요</string>
+    <string name="market_tagEtc">#기타</string>
+    <string name="market_tagVegan">#비건</string>
+    <string name="market_tagUpcycling">#업사이클링</string>
+    <string name="market_tagLocalfood">#로컬푸드</string>
+    <string name="market_tagSubfood">#대체식품</string>
+
+
 </resources>
