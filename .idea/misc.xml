@@ -3,16 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/drawable/bg_box_green_round_18.xml" value="0.3285" />
+        <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/drawable/bg_box_round_14.xml" value="0.2885" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/drawable/ic_bottom_challenge.xml" value="0.3635" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/drawable/ic_bottom_home.xml" value="0.3635" />
+        <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/drawable/ic_habit_check.xml" value="0.311" />
+        <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/drawable/ic_launcher_background.xml" value="0.311" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/drawable/ic_logo.xml" value="0.358" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/drawable/selector_menu_color.xml" value="0.108" />
-        <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/activity_main.xml" value="0.6666666666666666" />
+        <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout-v28/fragment_home.xml" value="0.8333333333333334" />
+        <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/bg_box_round_14.xml" value="0.3625" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/fragment_challenge.xml" value="0.3625" />
-        <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/fragment_home.xml" value="0.3625" />
+        <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/fragment_home.xml" value="0.14666666666666667" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/fragment_market.xml" value="0.34791666666666665" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/fragment_mypage.xml" value="0.34791666666666665" />
+        <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/layout/item_ad.xml" value="0.3625" />
         <entry key="..\:/HYUNA/Activities/202206JointHackthonforSWUniv/Project/Android_EcoFit/app/src/main/res/menu/main_bottom_navigation_menu.xml" value="0.3625" />
       </map>
     </option>

@@ -9,4 +9,12 @@
     <string name="main_mypage">My page</string>
 
 
+    <!-- Home -->
+    <string name="home_habitTitle1">습관 1</string>
+    <string name="home_habitTitle2">습관 2</string>
+    <string name="home_habitTitle3">습관 3</string>
+    <string name="home_habitNum">회</string>
+    <string name="home_habitPoint">P / 최대 100P</string>
+    <string name="home_point">눌러서 포인트 받기</string>
+
 </resources>
