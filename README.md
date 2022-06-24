@@ -115,5 +115,5 @@
 - Android studio Bumblebee 2021.1.1
 ### 2. Hardware requirement
 - Android Phone (API Level 30 / 360 x 800 Resolution)
-- Window
+- window 11
 
