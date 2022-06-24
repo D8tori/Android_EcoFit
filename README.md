@@ -6,7 +6,7 @@
 - 기후 위기에 모두가 관심을 갖고 행동할 수 있는 시민 의식을 제고합니다.
 - 기존 챌린지 어플과 달리 환경보호에 초점을 맞췄습니다.
 
-[Presentation Slides](https://drive.google.com/file/d/19aQZixMDa-gGTCC0TOfD8PeZLG_41U7a/view?usp=sharing) / [Demo Video]()
+[Presentation Slides](https://drive.google.com/file/d/19aQZixMDa-gGTCC0TOfD8PeZLG_41U7a/view?usp=sharing) / [Demo Video](https://www.youtube.com/watch?v=m8oeYZGmA88)
 
 
 <br>
