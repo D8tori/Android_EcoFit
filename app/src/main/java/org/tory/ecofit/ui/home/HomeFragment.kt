@@ -22,7 +22,6 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
-        binding.viewModel = viewModel
         return binding.root
     }
 
@@ -33,6 +32,8 @@ class HomeFragment : Fragment() {
 
         setCharacterAdapter()
         setAdObserve()
+        initClickListener()
+        setPointObserver()
     }
 
     private fun setCharacterAdapter() {
@@ -55,5 +56,38 @@ class HomeFragment : Fragment() {
                 setAd(adList)
             }
         }
+    }
+
+    private fun initClickListener() {
+        var count1 = 0
+        var point1 = 0
+        var count2 = 0
+        var point2 = 0
+        var count3 = 0
+        var point3 = 0
+        binding.ivHabitCheck1.setOnClickListener {
+            count1++
+            point1 += 4
+            binding.tvHabitCount1.text = count1.toString()
+            binding.tvHabitPointCount1.text = point1.toString()
+        }
+
+        binding.ivHabitCheck2.setOnClickListener {
+            count2++
+            point2 += 4
+            binding.tvHabitCount2.text = count2.toString()
+            binding.tvHabitPointCount2.text = point2.toString()
+        }
+
+        binding.ivHabitCheck3.setOnClickListener {
+            count3++
+            point3 += 4
+            binding.tvHabitCount3.text = count3.toString()
+            binding.tvHabitPointCount3.text = point3.toString()
+        }
+    }
+
+    private fun setPointObserver(){
+
     }
 }

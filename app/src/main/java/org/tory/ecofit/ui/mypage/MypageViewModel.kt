@@ -1,4 +1,4 @@
-package org.tory.ecofit.ui.market
+package org.tory.ecofit.ui.mypage
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -8,15 +8,16 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 import org.tory.ecofit.data.api.RetrofitBuilder
 import org.tory.ecofit.data.model.response.ResponseMarketList
+import org.tory.ecofit.data.model.response.ResponseUserInfo
 
-class MarketViewModel(application: Application) : AndroidViewModel(application) {
-    private val _itemList = MutableLiveData<ResponseMarketList>()
-    val itemList: LiveData<ResponseMarketList>
+class MypageViewModel(application: Application) : AndroidViewModel(application) {
+    private val _itemList = MutableLiveData<ResponseUserInfo>()
+    val itemList: LiveData<ResponseUserInfo>
         get() = _itemList
 
     fun setItemList() = viewModelScope.launch {
         _itemList.postValue(
-            RetrofitBuilder.marketService.getMarketList()
+            RetrofitBuilder.userService.getUserInfo()
         )
     }
 }

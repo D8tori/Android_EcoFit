@@ -4,6 +4,8 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import org.tory.ecofit.R
 import org.tory.ecofit.data.local.ChallengeItemData
 import org.tory.ecofit.data.local.MarketItemData
 import org.tory.ecofit.databinding.ItemChallengeDetailListBinding
@@ -29,7 +31,11 @@ class ChallengeDetailAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         RecyclerView.ViewHolder(binding.root) {
         fun bind(data: ChallengeItemData) {
             binding.viewModel = data
-            binding.ivMarketImage.setImageResource(data.img)
+            Glide.with(itemView)
+                .load(data.img)
+                .error(R.drawable.img_logo)
+                .fallback(R.drawable.img_logo)
+                .into(binding.ivMarketImage)
         }
     }
 
